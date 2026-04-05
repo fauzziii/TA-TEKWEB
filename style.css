@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: absolute;
+  width: 94.7%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.menu a:hover {
+  background: #333;
+  border-radius: 5px;
+}
+
+/* DROPDOWN */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #4e4eda;
+  min-width: 150px;
+  border-radius: 5px;
+  padding: 5px 0;
+  z-index: 999;
+}
+
+.dropdown-content li a {
+  color: white;
+  padding: 10px;
+}
+
+.dropdown-content li a:hover {
+  background: #333;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* BUTTON */
+.btn-sign {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-sign:hover {
+  background: darkorange;
+}
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("https://assets-tour.bayubuanatravel.com/home-banner/1b513ed5-2951-4042-95b6-77d180b22398/FUJI.jpg")
+    no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OVERLAY */
+.hero-overlay {
+  text-align: center;
+  color: white;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+}
+
+.hero-overlay p {
+  margin-bottom: 20px;
+  color: orange;
+  font-size: 20px;
+}
+
+/* SEARCH BOX */
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 5px;
+  border-radius: 12px;
+  width: 500px;
+  margin: auto;
+  /* transform: translateY(50px); */
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
