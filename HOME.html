@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelKu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
 
 <body>
@@ -15,32 +15,87 @@
             <div class="logo">TravelKu</div>
 
             <ul class="menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="#HERO">Home</a></li>
                 <li><a href="#">About</a></li>
-
-                <li class="dropdown">
-                    <a href="#">Destinations ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Europe</a></li>
-                        <li><a href="#">Asia</a></li>
-                        <li><a href="#">America</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#">Contact</a></li>
+                <li><a href="#destination">Destinations</a></li>
                 <li><button class="btn-sign">Sign In</button></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    <!-- hero -->
+    <section class="hero" id="HERO">
         <div class="hero-overlay">
-            <p class="subtitle">Welcome To Bayu Buana Travel Services</p>
+            <p class="subtitle">Welcome To TravelKu</p>
             <h1>Let's Explore The World</h1>
             <p class="desc">
                 Dapatkan pengalaman liburan yang istimewa dengan harga menarik dan layanan terbaik untuk memuaskan
                 setiap perjalanan!
             </p>
         </div>
+    </section>
+    <!-- destination -->
+    <section class="destination" id="destination">
+        <h1 class="title">Tour Destinations</h1>
+        <p class="d">
+            Jelajahi beragam destinasi menakjubkan di seluruh dunia dan rasakan pesona setiap musim yang memikat di
+            setiap langkah perjalanan Anda yang tak terlupakan dengan <br> #TravelKu!
+        </p>
+
+        <div class="card-layout">
+
+            <div class="card europe">
+                <div class="card-img" style="background-image: url('/img/Eropa.jpg');">
+                    <div class="overlay">
+                        <h3>Europe</h3>
+                        <span class="line"></span>
+                        <p>90 Tours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card asia">
+                <div class="card-img" style="background-image: url('/img/Asia.jpg');">
+                    <div class="overlay">
+                        <h3>Asia</h3>
+                        <span class="line"></span>
+                        <p>86 Tours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card america">
+                <div class="card-img" style="background-image: url('/img/Amerika.jpg');">
+                    <div class="overlay">
+                        <h3>America</h3>
+                        <span class="line"></span>
+                        <p>5 Tours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card australia">
+                <div class="card-img" style="background-image: url('/img/Austalia.jpg');">
+                    <div class="overlay">
+                        <h3>Australia</h3>
+                        <span class="line"></span>
+                        <p>20 Tours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card africa">
+                <div class="card-img" style="background-image: url('/img/AF.jpg');">
+                    <div class="overlay">
+                        <h3>Africa</h3>
+                        <span class="line"></span>
+                        <p>1 Tour</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
     </section>
 
 </body>
