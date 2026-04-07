@@ -47,7 +47,7 @@ body {
 }
 
 .menu a:hover {
-  background: #333;
+  background: red;
   border-radius: 5px;
 }
 
@@ -57,7 +57,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #4e4eda;
+  background: #ffffff;
   min-width: 150px;
   border-radius: 5px;
   padding: 5px 0;
@@ -65,12 +65,12 @@ body {
 }
 
 .dropdown-content li a {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 10px;
 }
 
 .dropdown-content li a:hover {
-  background: #333;
+  background: red;
 }
 
 /* SHOW DROPDOWN */
@@ -92,58 +92,54 @@ body {
 .btn-sign:hover {
   background: darkorange;
 }
+
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("https://assets-tour.bayubuanatravel.com/home-banner/1b513ed5-2951-4042-95b6-77d180b22398/FUJI.jpg")
-    no-repeat center;
+  background: url("img/gunung.jpg") no-repeat center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
-/* OVERLAY */
+/* Overlay biar teks kebaca */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Isi Hero */
 .hero-overlay {
-  text-align: center;
-  color: white;
-}
-
-.hero-overlay h1 {
-  font-size: 48px;
-}
-
-.hero-overlay p {
-  margin-bottom: 20px;
-  color: orange;
-  font-size: 20px;
-}
-
-/* SEARCH BOX */
-.search-box {
+  position: relative;
+  z-index: 1;
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  background: white;
-  padding: 5px;
-  border-radius: 12px;
-  width: 500px;
-  margin: auto;
-  /* transform: translateY(50px); */
-}
+  text-align: center;
 
-.search-box input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: red;
   color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+  padding: 0 20px;
+}
+
+/* Tulisan kecil atas */
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Judul besar */
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Deskripsi */
+.desc {
+  font-size: 18px;
+  max-width: 700px;
 }
