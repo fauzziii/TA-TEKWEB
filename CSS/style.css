@@ -221,3 +221,177 @@ html {
   transform: scale(1.03);
   transition: 0.3s;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* ABOUT SECTION */
+.about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.v {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+/* CEO SECTION */
+.ceo-section {
+  max-width: 1000px;
+  margin: 50px 0 50px 50px;
+  padding: 20px;
+}
+
+.ceo-section h2 {
+  color: #ff5a2c;
+  margin-bottom: 20px;
+}
+
+/* GRID FOTO */
+.ceo-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.ceo-card {
+  width: 200px;
+  text-align: center;
+}
+
+.ceo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.ceo-card p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.about-container {
+  max-width: 1000px;
+  margin: 40px 0 40px 50px;
+  padding: 20px;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+
+.about-container h2 {
+  color: #ff5a2c;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.about-container h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.about-container p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.about-container ul {
+  padding-left: 20px;
+}
+
+.about-container ul li {
+  margin-bottom: 8px;
+}
+
+/* footer */
+.footer {
+  background: linear-gradient(to right, #0f9b8e, #0a7f78);
+  color: white;
+  margin-top: 80px;
+  padding-top: 40px;
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* LEFT */
+.footer-left h2 {
+  margin: 0;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.socials span {
+  display: inline-block;
+  margin-right: 10px;
+  background: orange;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* MIDDLE */
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-middle a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* RIGHT */
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.footer-right input {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-right button {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 11px;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 13px;
+}

@@ -68,17 +68,18 @@ body {
   background: darkorange;
 }
 
-/* hero */
-
+/* HERO */
 .hero img {
   object-fit: cover;
   width: 100%;
   height: 300px;
 }
 
+/* TOUR SECTION */
 .tour-section {
   max-width: 1200px;
-  margin: auto;
+  margin: 100px auto 0;
+  padding: 0 20px;
 }
 /* TITLE */
 .title {
@@ -88,87 +89,184 @@ body {
 
 /* FILTER */
 .filter {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .filter button {
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: none;
-  margin: 5px;
-  cursor: pointer;
+  margin-right: 10px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .filter .active {
   background: #ffcc00;
 }
 
+/* HEADER */
+.tour-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tour-header img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.tour-header h4 {
+  margin: 0;
+}
+
+.tour-header p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+}
+
 /* LIST */
 .tour-list {
   display: flex;
-  justify-content: flex-start;
-  justify-content: center;
-  padding-left: 50px;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
 /* CARD */
 .tour-card {
-  width: 320px;
+  width: 300px;
   background: white;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
 }
 
 /* IMAGE */
 .tour-img {
-  height: 200px;
+  height: 180px;
   background: url("https://tse1.mm.bing.net/th/id/OIP.lE8QoZaKG2-cXEhIPtbPCQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3")
     center/cover;
 }
 
 /* CONTENT */
 .tour-content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .tour-content h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.tour-content p {
   font-size: 14px;
-  margin: 5px 0;
-  color: #555;
 }
 
 /* PRICE */
-.price {
-  margin-top: 10px;
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .old {
   text-decoration: line-through;
   color: red;
-  font-size: 13px;
+  font-size: 12px;
 }
 
-.price h4 {
-  color: #000;
-  margin: 5px 0;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px;
-  background: #ffcc00;
+.detail {
+  font-size: 12px;
+  color: red;
   text-decoration: none;
-  color: black;
+}
+/* footer */
+.footer {
+  background: linear-gradient(to right, #0f9b8e, #0a7f78);
+  color: white;
+  margin-top: 80px;
+  padding-top: 40px;
+}
+
+/* CONTAINER */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* LEFT */
+.footer-left h2 {
+  margin: 0;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.socials span {
+  display: inline-block;
+  margin-right: 10px;
+  background: orange;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* MIDDLE */
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-middle a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+/* RIGHT */
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.footer-right input {
+  width: 250px;
+  padding: 10px;
+  border: none;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-right button {
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 11px;
+  margin-top: 10px;
+  color: #e0e0e0;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 13px;
 }
